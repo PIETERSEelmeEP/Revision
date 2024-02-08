@@ -1,11 +1,10 @@
-"""Make a second version of the program above (average marks) and change it so
-that all the names and marks are added to a list. In addition to the output
-produced in the original version, this version should also calculate and print
-each student's name and a 'University' style grade. University grades are
-awarded as follows: A mark of 90% or more is an A+ grade. 85-89% is A. 80-84%
-is A-. 75-79% is B+. 70-74% is B. 65-69% is B-. 60-64% is C+. 55-59% is C.
-50-54% is C-. 40-49% is D. 0-39% is E."
+"""Your english teacher wants a program to keep track of their students marks
+and grades. Write a program which takes, as input, the student's name and an
+exam mark - between 0 and 100. The program should keep asking for input until
+"X" is entered as the students name. The program should then output the name
+and mark of the best student, as well as the average mark for all students.
 """
+
 
 def number_checker(question):
     error = "\nYou must enter a valid number\n"
