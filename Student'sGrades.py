@@ -4,7 +4,7 @@ produced in the original version, this version should also calculate and print
 each student's name and a 'University' style grade. University grades are
 awarded as follows: A mark of 90% or more is an A+ grade. 85-89% is A. 80-84%
 is A-. 75-79% is B+. 70-74% is B. 65-69% is B-. 60-64% is C+. 55-59% is C.
-50-54% is C-. 40-49% is D. 0-39% is E."
+50-54% is C-. 40-49% is D. 0-39% is E.
 """
 
 
