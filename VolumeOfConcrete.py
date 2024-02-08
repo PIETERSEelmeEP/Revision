@@ -1,3 +1,15 @@
+"""Colossal Construction is a company which delivers concrete for the
+foundations of new residential and commercial buildings. You have been asked
+to write a program to calculate the volume of concrete needed for each job,
+as well as the total needed for all jobs on a particular day. The foundations
+for commercial buildings need to be 50cm thick, whereas those for residential
+buildings are only half that thickness. The program should keep asking for
+inputs and producing the volume results until a rogue building type ("X") is
+entered. The program should then tell the user the total amount of concrete
+needed for the day.
+"""
+
+
 def number_checker(question):
     error = "\nYou must enter a valid number\n"
     number = ""
