@@ -1,3 +1,10 @@
+"""Write a program which gets the user to input two numbers have different
+values, output the higher value otherwise output a message saying they are
+equal. The program must repeatedly ask for two numbers until a rogue number
+of 0 is entered.
+"""
+
+
 def number_checker(question):
     error = "\nYou must enter a number\n"
     number = ""
