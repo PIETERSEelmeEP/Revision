@@ -4,7 +4,7 @@ to write a program to calculate the volume of concrete needed for each job,
 as well as the total needed for all jobs on a particular day. The foundations
 for commercial buildings need to be 50cm thick, whereas those for residential
 buildings are only half that thickness. The program should keep asking for
-inputs and producing the volume results until a rogue building type ("X") is
+inputs and producing the volume results until a rogue building type ("x") is
 entered. The program should then tell the user the total amount of concrete
 needed for the day.
 """
