@@ -6,14 +6,37 @@ kilograms worked off.
 """
 
 
+def calculate_weight_loss(bicycling_hours, jogging_hours, swimming_hours):
+    # Calories burned per hour for each activity
+    calories_bicycling = 200
+    calories_jog = 475
+    calories_swimming = 275
+
+    # Total calories burned
+    total_calories = (bicycling_hours * calories_bicycling) + (jogging_hours *
+                                                               calories_jog) +\
+                     (swimming_hours * calories_swimming)
+
+    # Calculate weight loss in kilograms
+    weight_loss_kg = (total_calories / 3500) * 454 / 1000  # Convert g to kg
+
+    return weight_loss_kg
+
+
 def main():
-    calories_per_hour = {'bicycling': 200, 'jogging': 475, 'swimming': 275}
-    hours_spent = {activity: float(input(f"Enter hours spent {activity}: "))
-                   for activity in calories_per_hour}
-    total_calories = sum(hours * calories_per_hour[activity] for activity,
-                         hours in hours_spent.items())
-    kilograms_lost = total_calories / 3500
-    print(f"You worked off {kilograms_lost:.2f} kilograms.")
+    # Input hours spent at each activity
+    bicycling_hours = float(input("Enter the number of hours spent "
+                                  "bicycling: "))
+    jogging_hours = float(input("Enter the number of hours spent "
+                                "jogging: "))
+    swimming_hours = float(input("Enter the number of hours spent swimming: "))
+
+    # Calculate weight loss
+    weight_loss = calculate_weight_loss(bicycling_hours, jogging_hours,
+                                        swimming_hours)
+
+    # Display the result
+    print("You worked off {:.2f} kilograms.".format(weight_loss))
 
 
 if __name__ == "__main__":
